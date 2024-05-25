@@ -20,7 +20,7 @@ for row in rows:
         temp = data
     main_data.append(temp[0:-1])
 
-mydb = mysql.connector.connect(user='ebrahimak', password='admin@1990', host='localhost')
+mydb = mysql.connector.connect(user='@@', password='@@', host='@@')
 cursor_a = mydb.cursor()
 cursor_a.execute('create database if not exists score')
 cursor_a.execute('use score')

@@ -15,7 +15,7 @@ for line in soup.findAll('tr', class_='athing'):
         temp_list[3:5]), temp_list[-3].replace('\xa0', ' ')))
 
 mydb = mysql.connector.connect(
-    user='ebrahimak', password='admin@1990', host='localhost')
+    user='@@', password='@@', host='@@')
 cursor = mydb.cursor()
 cursor.execute('create database if not exists news')
 cursor.execute('use news')
